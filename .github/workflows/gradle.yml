@@ -20,5 +20,5 @@ jobs:
     - name: Upload built jar file
       uses: actions/upload-artifact@v2
       with:
-        name: ioPlugin
+        name: rebornPlugin
         path: build/libs/ioPlugin.jar
