@@ -1,0 +1,45 @@
+apply plugin: "java"
+apply plugin: "maven"
+
+version '0.1'
+
+sourceCompatibility = 14
+
+repositories{
+    mavenLocal()
+    mavenCentral()
+    maven{ url 'https://jitpack.io' }
+    maven{ url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    maven{ url "https://oss.sonatype.org/content/repositories/releases/" }
+    jcenter()
+}
+
+ext{
+    mindustryVersion = 'v114'
+    arcVersion = 'v114'
+    jdaVersion = "v4.2.0"
+}
+
+dependencies{
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    compile "com.github.Anuken.Arc:arc-core:$arcVersion"
+    compile "com.github.Anuken.Mindustry:core:$mindustryVersion"
+    compile "com.github.Anuken.Mindustry:server:$mindustryVersion"
+
+    compile "org.glassfish.jersey.core:jersey-client:2.25.1"
+    compile "redis.clients:jedis:3.2.0"
+    compile group: 'org.json', name: 'json', version: '20190722'
+    compile "org.jsoup:jsoup:1.7.2"
+
+    implementation "com.github.DV8FromTheWorld:JDA:$jdaVersion"
+}
+
+jar{
+    version=""
+    from{
+        configurations.runtimeClasspath.findAll{ !it.name.endsWith('pom') }.collect{it.isDirectory() ? it : zipTree(it)}
+    }
+}
+
+compileJava.options.encoding = 'UTF-8'
