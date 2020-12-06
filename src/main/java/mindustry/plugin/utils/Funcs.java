@@ -81,7 +81,10 @@ public class Funcs {
         bannedNames.add("tuttop");
         bannedNames.add("Nexity");
         bannedNames.add("Itzbenz");
+        bannedNames.add("Anuked");
+        bannedNames.add("Proveto");
         bannedNames.add("Dofuscan");
+        bannedNames.add("fuzzbuck");
         bannedNames.add("IgruhaOrg");
         bannedNames.add("андрей");
 
