@@ -79,7 +79,9 @@ public class Funcs {
         bannedNames.add("CODEX");
         bannedNames.add("VALVE");
         bannedNames.add("tuttop");
-        bannedNames.add("Volas Y0uKn0w1sR34Lp");
+        bannedNames.add("Nexity");
+        bannedNames.add("Itzbenz");
+        bannedNames.add("Dofuscan");
         bannedNames.add("IgruhaOrg");
         bannedNames.add("андрей");
 

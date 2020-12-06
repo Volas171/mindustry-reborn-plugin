@@ -1,7 +1,7 @@
 {
-  "name": "ioPlugin",
-  "author": "Various, see https://github.com/fuzzbuck/mindustry.io-plugin/blob/master/CONTRIBUTORS.MD",
+  "name": "rebornPlugin",
+  "author": "Various, see https://github.com/Volas171/mindustry-reborn-plugin",
   "main": "mindustry.plugin.ioMain",
   "description": "Allows interaction with discord & vice versa, makes moderation easier.",
-  "version": 1.61
+  "version": 2.01
 }

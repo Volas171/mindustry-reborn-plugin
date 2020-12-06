@@ -50,7 +50,7 @@ public class Loader {
         Funcs.init();
 
 
-        Log.info("<.io> loading");
+        Log.info("<.reborn> loading");
         try {
             String pureJson = Core.settings.getDataDirectory().child("mods/settings.json").readString();
             data = new JSONObject(new JSONTokener(pureJson));
@@ -123,6 +123,6 @@ public class Loader {
         if (data.has("moderator_roleid")) moderator = api.getRoleById(data.getString("moderator_roleid"));
         if (data.has("administrator_roleid")) administrator = api.getRoleById(data.getString("administrator_roleid"));
 
-        Log.info("<.io> loaded successfully");
+        Log.info("<.reborn> loaded successfully");
     }
 }
