@@ -21,4 +21,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: rebornPlugin
-        path: build/libs/ioPlugin.jar
+        path: build/libs/rePlugin.jar
